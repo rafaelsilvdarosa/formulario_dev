@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Dev</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Faça seu cadastro de dev!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Preencha seu cadastro!</h1>
+                <p>
+                    Complete seu cadastro com seus dados e sua experiência como dev
+                </p>
+                <form>
+                    <div class="box-input">
+                        <label for="name">
+                            Nome <span class="required-field">*</span></label>
+                        <input type="text" name="name" id="name" class="block" placeholder="Preencha com seu nome"
+                            minlength="1" maxlength="30" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="surname">
+                            Sobrenome <span class="required-field">*</span></label>
+                        <input type="text" name="surname" id="surname" class="block"
+                            placeholder="Preencha com seu sobrenome" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="e-mail">E-mail <span class="required-field">*</span></label>
+                        <input type="email" name="e-mail" id="e-mail" class="block"
+                            placeholder="Preencha com seu endereço de e-mail" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase-date">
+                            Data de nascimento <span class="required-field">*</span></label>
+                        <input type="Date" name="purchase-date" id="purchase-date" class="block" required />
+                    </div>
+                    <div class="form-body-2">
+                        <div class="box-input">
+                            <label for="about">
+                                Sobre mim <span class="required-field">*</span></label>
+                            <textarea name="about" id="about" class="block"
+                                placeholder="Aqui é um campo livre para falar sobre sua experiência como dev e alguns detalhes específicos"></textarea>
+                        </div>
+                        <div class="box-input">
+                            <p>Parte em que desenvolve: <span class="required-field">*</span></p>
+                            <input type="radio" id="front-end" name="area" />
+                            <label for="front-end">Front-end</label>
+                            <input type="radio" id="back-end" name="area" />
+                            <label for="back-end">Back-end</label>
+                            <input type="radio" id="fullstack" name="area" />
+                            <label for="fullstack">Fullstack</label>
+                        </div>
+                        <div class="optional-box">
+                            <p>Selecione as tecnologias que utiliza</p>
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" id="js" name="optional[]" value="js">
+                                    <label for="js">Javascript</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="python" name="optional[]" value="python">
+                                    <label for="python">Python</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="c#" name="optional[]" value="c#">
+                                    <label for="c#">C#</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="typescript" name="optional[]" value="typescript">
+                                    <label for="typescript">Typescript</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="optional-box">
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" id="react" name="optional[]" value="react">
+                                    <label for="react">React</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="html" name="optional[]" value="html">
+                                    <label for="html">Html</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="css" name="optional[]" value="css">
+                                    <label for="css">Css</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="php" name="optional[]" value="php">
+                                    <label for="php">PHP</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-input">
+                            <p>Portifólio<span class="required-field">*</span></p>
+                            <input type="file" multiple id="file" name="file">
+                        </div>
+                        <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
